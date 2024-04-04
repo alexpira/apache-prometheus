@@ -23,7 +23,7 @@ LoadModule prometheus_module /usr/lib/apache2/modules/mod_prometheus.so
 <IfModule mod_prometheus.c>
 	<Location /prometheus>
 		SetHandler prometheus
-    Require local # or something like Require ip A.B.C.D/MASK
+		Require local # or something like Require ip A.B.C.D/MASK
 	</Location>
 </IfModule>
 ```
